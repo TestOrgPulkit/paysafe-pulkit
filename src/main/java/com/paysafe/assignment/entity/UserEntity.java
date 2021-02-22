@@ -5,7 +5,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
-//This class is stored in db.
+// This entity represent a row in our db table
 @Entity
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class UserEntity {
@@ -14,8 +14,7 @@ public class UserEntity {
     private String customerId;
     private String merchantCustomerId;
 
-    public UserEntity()
-    {
+    public UserEntity() {
     }
 
     public UserEntity(String email, String customerId, String merchantCustomerId) {

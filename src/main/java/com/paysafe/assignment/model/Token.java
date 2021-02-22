@@ -1,6 +1,6 @@
 package com.paysafe.assignment.model;
 
-//this class holds attribute that we will send to paysafe server for processing request
+// this class holds attributes that are being sent to paysafe's server for payment processing
 public class Token {
     private String paymentHandleToken;
     private String merchantRefNum;
@@ -8,8 +8,9 @@ public class Token {
     private String currencyCode;
     private String merchantCustomerId;
     private String customerId;
-    private boolean settleWithAuth=true;
-    private boolean dupCheck=true;
+    private boolean settleWithAuth = true;
+    private boolean dupCheck = true;
+    private String description = "AlgoCaptain Subscription";
 
     public Token(String paymentHandleToken, String merchantRefNum, Integer amount, String currencyCode) {
         this.paymentHandleToken = paymentHandleToken;
